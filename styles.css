@@ -381,7 +381,7 @@ header {
 }
 
 .text-grid p {
-    color: var(--cinza);
+    color: var(--cinza-medio);
     font-size: var(--font-pequena);
     line-height: 1.5;
     max-width: 200px;
