@@ -107,7 +107,7 @@ header {
 
 .wrapper {
     width: 100%;
-    height: 75px;
+    height: 80px;
     background-color: var(--body-color);
 }
 
@@ -118,7 +118,7 @@ header {
 }
 
 .itens-link {
-    margin: 23px 50px;
+    margin: 26px 60px;
     display: flex;
     gap: 35px;
 }
@@ -247,6 +247,7 @@ header {
     background-color: var(--tom-escuro);
     color: var(--body-color);
 }
+
 /*Capa da página */
 
 
@@ -274,7 +275,7 @@ header {
 
 .sobre-text {
     margin-left: 50px;
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: start;
 }
 
@@ -284,7 +285,7 @@ header {
 
 .sobre-text p {
     color: var(--cinza-medio);
-    width: 95%;
+    width: 70%;
     margin-bottom: 20px;
 }
 
@@ -319,6 +320,26 @@ header {
     color: var(--cinza-medio);
     font-size: 13px;
     margin-left: 5px;
+}
+
+.btn-article-about {
+    display: flex;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.btn-article-about a {
+    color: var(--tom-escuro);
+    text-decoration: none;
+    padding: 10px 45px;
+    border-radius: 3px;
+    border: solid 1px var(--azul-claro);
+}
+
+.btn-article-about a:hover {
+    background-color: var(--azul-claro);
+    border: solid 1px var(--hover-color);
+    color: var(--body-color);
 }
 
 
@@ -358,7 +379,7 @@ header {
 }
 
 .grid-item img {
-    background-color: #67769348;
+    background-color: #67769334;
     position: absolute;
     top: -30px;
     left: 34%;
