@@ -77,11 +77,12 @@ main {
 }
 
 .titulo {
-    margin-top: 2rem;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
     text-align: center;
     font-weight: 900 bold;
     color: var(--azul-claro);
-    font-size: var(--font-grande);
+    font-size: 39px;
 }
 .titulo span{
     color: var(--tom-escuro);
@@ -231,7 +232,7 @@ header {
 .btn-article a {
     color: var(--tom-escuro);
     text-decoration: none;
-    padding: 8px 30px;
+    padding: 10px 45px;
     border-radius: 3px;
     border: solid 1px var(--azul-claro);
 }
@@ -349,6 +350,7 @@ header {
     text-align: center;
     transition: transform 0.3s ease;
     position: relative;
+
 }
 
 .grid-item:hover {
@@ -356,13 +358,14 @@ header {
 }
 
 .grid-item img {
+    background-color: #67769348;
     position: absolute;
     top: -30px;
     left: 34%;
     width: 80px;
-    height: 80px;
+    height: 85px;
     object-fit: contain;
-    border-radius: 50%;
+    border-radius: 30%;
 }
 
 .text-grid {
@@ -377,7 +380,7 @@ header {
 }
 
 .text-grid p {
-    color: var(--cinza-medio);
+    color: var(--azul-claro);
     font-size: var(--font-pequena);
     line-height: 1.5;
     max-width: 200px;
@@ -393,7 +396,6 @@ header {
 
 
 .service-article {
-    margin-top: 30px;
     display: flex;
     border-radius: 13px;
     height: 420px;
@@ -553,9 +555,9 @@ header {
 }
 
 .contato-form button {
-    padding: 10px 20px;
+    padding: 15px 45px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     font-size: --font-pequena;
     font-weight: bold;
