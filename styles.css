@@ -257,27 +257,24 @@ header {
 /* Sobre a clinica  */
 .sobre-nos {
     display: flex;
+    height: auto;
     margin: 50px;
-    margin-top: -30px;
 }
 
 .sobre-article {
     display: flex;
-
-    /* box-shadow: 0 0 32px rgb(0 0 0 / 8%),
-    0em 16px 16px -16px rgb(0 0 0 / 8%);
-    background: linear-gradient(45deg, #677693, white); */
+    margin: 50px;
+    overflow: hidden;
 }
 
-.sobre-article img {
-    width: 50%;
-    margin-left: 50px;
-    margin-bottom: 30px;
+.sobre-img{
+    width: 45%;
+    border-radius: 120px 0px 0px 0px;
 }
 
 .sobre-text {
-    margin-left: 20px;
-    margin-top: 90px;
+    margin-left: 30px;
+    margin-top: 20px;
     text-align: start;
 }
 
@@ -287,12 +284,12 @@ header {
 
 .sobre-text p {
     color: var(--cinza-medio);
-    width: 80%;
+    width: 90%;
     margin-bottom: 20px;
 }
 
 .sobre-text h3 {
-    width: 80%;
+    width: 90%;
     color: var(--tom-escuro);
     font-size: var(--font-grande);
 }
@@ -407,10 +404,10 @@ header {
 .service-titulo {
     position: absolute;
     right: 0;
-    margin-top: 20px;
+    margin-top: 30px;
     width: 190px;
-    margin-right: 64%;
-    font-size: var(--font-media);
+    margin-right: 60%;
+    font-size: 20px;
     color: var(--azul-claro);
 }
 
@@ -419,8 +416,10 @@ header {
 }
 
 .service-img {
+    margin-top: 40px;
     margin-left: 50px;
-    width: 390px;
+    width: 350px;
+    height: 90%;
 }
 
 .service-img:hover {
@@ -498,7 +497,7 @@ header {
     margin-top: 25px;
 }
 .contato-container {
-    background: linear-gradient(45deg, white, #67769354);
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.521), #677693e5);
     color: white;
     display: flex;
     border-radius: 13px;
@@ -511,7 +510,7 @@ header {
 }
 
 .img-contato img {
-    width: 56%;
+    width: 45%;
     position: absolute;
     left: 0;
 }
@@ -519,19 +518,13 @@ header {
 .contato-header {
     display: flex;
     align-items: center;
-    margin-bottom: 2px;
-}
-
-.contato-icon {
-    font-size: 30px;
-    margin-bottom: 25px;
-    color: var(--azul-claro);
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .contato-title {
-    font-size: var(--font-pequena);
-    color: var(--tom-escuro);
+    font-size: var(--font-media);
+    color: var(--cinza);
+    font-weight: bold;
 }
 
 .contato-form {
@@ -542,7 +535,7 @@ header {
     box-shadow: 0 0 32px rgb(0 0 0 / 8%),
     0em 16px 16px -16px rbb(0 0 0 / 8%);
     margin-right: 5%;
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -551,7 +544,7 @@ header {
 .contato-form input,
 .contato-form textarea {
     padding: 10px;
-    border: solid 0.6px var(--cinza-claro);
+    border: solid 2px var(--cinza-claro);
     border-radius: 13px;
     font-size: var(--font-pequena);
 }
