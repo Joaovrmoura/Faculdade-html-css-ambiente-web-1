@@ -44,15 +44,15 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 5px
+    width: 10px
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--cinza-medio)
+    background: var(--cinza-claro)
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--tom-escuro);
+    background-color: var(--azul-claro);
 }
 
 /* tags gerais da página */
@@ -263,18 +263,17 @@ header {
 
 .sobre-article {
     display: flex;
-    margin: 50px;
-    overflow: hidden;
+    height: 450px;
 }
 
 .sobre-img{
-    width: 45%;
-    border-radius: 120px 0px 0px 0px;
+    width: 40%;
+    margin-left: 50px;
 }
 
 .sobre-text {
-    margin-left: 30px;
-    margin-top: 20px;
+    margin-left: 50px;
+    margin-top: 30px;
     text-align: start;
 }
 
@@ -284,12 +283,12 @@ header {
 
 .sobre-text p {
     color: var(--cinza-medio);
-    width: 90%;
+    width: 95%;
     margin-bottom: 20px;
 }
 
 .sobre-text h3 {
-    width: 90%;
+    width: 95%;
     color: var(--tom-escuro);
     font-size: var(--font-grande);
 }
