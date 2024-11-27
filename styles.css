@@ -473,7 +473,7 @@ header {
     color: var(--body-color);
 }
 
-/* Responsividade para telas menores */
+/* Responsividade section sobre */
 @media (max-width: 1280px) {
     .sobre-nos {
         align-items: center;
@@ -694,7 +694,7 @@ header {
     background-color: var(--hover-color);
 }
 
-/* Media Queries para responsividade */
+/* Media Queries section servicos*/
 @media (max-width: 1024px) {
     .servicos {
         background-image: none;
@@ -756,7 +756,7 @@ header {
 
 
 
-/* Section de serviços da página */
+/* Section de horarios da página */
 .service-article {
     display: flex;
     border-radius: 13px;
@@ -841,7 +841,7 @@ header {
 }
 
 
-/* Media Queries para Responsividade */
+/* Media Queries section horarios */
 @media (max-width: 1024px) {
     .service-article {
         align-items: center;
@@ -870,7 +870,6 @@ header {
     }
 }
 
-/* Smartphones (max-width: 768px) */
 @media (max-width: 768px) {
     .service-titulo {
         font-size: 16px;
@@ -893,7 +892,6 @@ header {
     }
 }
 
-/* Telas pequenas (max-width: 480px) */
 @media (max-width: 480px) {
     .service-titulo {
         font-size: 14px;
@@ -1052,8 +1050,7 @@ header {
 .map-overlay a:hover {
     text-decoration: underline;
 }
-
-/* Media Queries para Responsividade */
+/* media queres section contato */
 @media (max-width: 1024px) {
 
     .contato-container {
@@ -1069,7 +1066,6 @@ header {
 }
 
 @media (max-width: 768px) {
-
     .contato-title {
         font-size: 18px;
     }
@@ -1196,7 +1192,7 @@ header {
 }
 
 
-/* Media Queries para Responsividade */
+/* Media Queries Footer */
 @media (max-width: 1024px) {
     .footer {
         margin: 0px 20px;
