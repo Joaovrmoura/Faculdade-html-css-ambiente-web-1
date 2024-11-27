@@ -548,12 +548,15 @@ header {
 
 /* Serviçoes da página */
 .servicos {
-    margin: 40px auto;
-    max-width: 1200px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.075)),
+    image-set('./img/consulto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
 }
 
 .grid-servicos {
-    margin-top: 90px;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -562,6 +565,9 @@ header {
 }
 
 .grid-item {
+    background-color: var(--body-color);
+    border-radius: 13px;
+    margin-top: 130px;
     padding: 20px;
     margin-bottom: 50px;
     text-align: center;
@@ -575,9 +581,8 @@ header {
 }
 
 .grid-item img {
-    background-color: #67769334;
     position: absolute;
-    top: -30px;
+    top: 10px;
     left: 34%;
     width: 80px;
     height: 85px;
@@ -586,7 +591,8 @@ header {
 }
 
 .text-grid {
-    margin-top: 50px;
+    margin-top: 80px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -597,7 +603,7 @@ header {
 }
 
 .text-grid p {
-    color: var(--azul-claro);
+    color: var(--cinza-medio);
     font-size: var(--font-pequena);
     line-height: 1.5;
     max-width: 200px;
@@ -690,6 +696,16 @@ header {
 
 /* Media Queries para responsividade */
 @media (max-width: 1024px) {
+    .servicos {
+        background-image: none;
+        height: auto;
+    }
+    .grid-item {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    
+    }
+    
     .trabalho-item {
         width: 45%;
     }
