@@ -11,11 +11,17 @@
 
 <body>
 
-    <header class="wrapper">
+    <!-- <header class="wrapper">
         <div class="logo">
             <h1>Clínica <span>Saúde</span></h1>
             <p>Integrada</p>
         </div>
+        <a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" 
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+            </svg>
+        </a>
         <nav class="menu">
             <ul class="itens-link">
                 <li class="link"><a href="#">Home</a></li>
@@ -24,9 +30,29 @@
                 <li class="link"><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
 
-    <main>
+    <header>
+		<div class="logo">
+            <h1>Clínica <span>Saúde</span></h1>
+            <p>Integrada</p>
+        </div>
+		<nav>
+            <ul class="itens-link" id="menu">
+                <li class="link"><a href="#">Home</a></li>
+                <li class="link"><a href="#sobre">Sobre</a></li>
+                <li class="link"><a href="#horarios">Horários</a></li>
+                <li class="link"><a href="#contato">Contato</a></li>
+            </ul>
+			<a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+				<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" 
+				xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+				<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+				</svg>
+			</a>
+		</nav>
+	</header>
+
         <section class="content">
             <div class="container">
                 <div class="article">
@@ -64,6 +90,84 @@
                 
             </div>
         </section>
+        <h3 class="titulo">Nossas <span>Especialidades</span></h3>
+        
+        <section class="trabalhos">
+
+            <div class="container-trabalhos">
+                <!-- Primeira linha de fotos -->
+                <div class="trabalho-item">
+                    <img src="./img/three smiling doctors.png" alt="">
+                    <div class="trabalho-text">
+                        <h4>Tomografias</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis</p>
+                        <div class="trabalho-btn">
+                            <a href="" class=""><i class="fab fa-whatsapp"></i> Contato</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trabalho-item">
+                    <img src="./img/uma clínica realista.png" alt="">
+                    <div class="trabalho-text">
+                        <h4>Consulta</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis</p>
+                        <div class="trabalho-btn">
+                            <a href="" class=""><i class="fab fa-whatsapp"></i> Contato</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trabalho-item">
+                    <img src="./img/three smiling doctors.png" alt="">
+                    <div class="trabalho-text">
+                        <h4>Cirurgias</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis</p>
+                        <div class="trabalho-btn">
+                          <a href="" class=""><i class="fab fa-whatsapp"></i> Contato</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Segunda linha de fotos escondida inicialmente -->
+                <div class="trabalho-item hidden">
+                    <img src="./img/three smiling doctors.png" alt="">
+                    <div class="trabalho-text">
+                        <h4>Exames</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis</p>
+                        <div class="trabalho-btn">
+                            <a href="" class=""><i class="fab fa-whatsapp"></i> Contato</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trabalho-item hidden">
+                    <img src="./img/three smiling doctors.png" alt="">
+                    <div class="trabalho-text">
+                        <h4>Vacinação</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis</p>
+                        <div class="trabalho-btn">
+                            <a href="" class=""><i class="fab fa-whatsapp"></i> Contato</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trabalho-item hidden">
+                    <img src="./img/three smiling doctors.png" alt="">
+                    <div class="trabalho-text">
+                        <h4>Ultrassonografia</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis</p>
+                        <div class="trabalho-btn">
+                            <a href="" class=""><i class="fab fa-whatsapp"></i> Contato</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Botão "Veja Mais" -->
+            <div class="veja-mais">
+                <button id="btn-veja-mais">Veja Mais</button>
+            </div>
+        </section>
+        
+
+
 
 
         <h3 class="titulo"><span>Nossos</span> Serviços</h3>
@@ -95,12 +199,12 @@
                     </div>
                 </div>
             </div>
+        </section>
+
 
             <h3 class="titulo" id="horarios">Horários de <span>Atendimento</span></h3>
-            <div class="service-article">
+            <section class="service-article">
                 <img src="./img/medica.png" alt="Médica com uma prancheta sorrindo" class="service-img">
-                <h3 class="service-titulo">Agende o <span>melhor horário.</span> Aguardamos sua 
-                <span>visita!</span></h3>
                 <div class="content-servicos">
                     <table>
                         <thead>
@@ -154,30 +258,31 @@
             </div>
         </section>
 
-    </main>
-
     <!-- Contato -->
 
    
     <h3 class="titulo">Entre em <span>Contato</span> </h3>
-    <section class="contato">
+    <section id="contato" class="contato">
         <div class="contato-container">
-          
-
-            <div class="img-contato" id="contato">
-                <img src="./img/3d-cartoon-style-character-removebg-preview.png" alt="desenho de um médico">
+            <div class="map">
+                <div class="map-info">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58930.60721592103!2d-43.75852841792771!3d-22.610389392694024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x994de0906daee5%3A0x635ed114ffd1ee93!2sParacambi%2C%20RJ%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1729215680294!5m2!1spt-BR!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="map-overlay">
+                    Av. Dr. Plínio Casado, 058 - s... 
+                    <a href="#">Ver mapa ampliado</a>
+                </div>
             </div>
-
             <form class="contato-form">
                 <div class="contato-header">
-                    <span class="contato-title">Mande uma menssagem!</span>
+                    <span class="contato-title" id="contato-title">Mande uma menssagem!</span>
                 </div>
                 <input type="text" placeholder="Nome*" required>
                 <input type="email" placeholder="E-mail*" required>
                 <input type="text" placeholder="Assunto">
                 <textarea placeholder="Mensagem"></textarea>
                 <div class="button-group">
-                    <button type="submit" class="send-button">Enviar</button>
+                    <button type="submit" class="send-button" id="btn">Enviar</button>
                     <button type="reset" class="clear-button">Limpar</button>
                 </div>
             </form>
@@ -192,15 +297,7 @@
                 <p>E-mail: <a href="mailto:contato@drhenriquetomiura.com.br">contato@drTulioAmbienteWeb.com.br</a></p>
                 <p>Endereço: Av. Plínio 123, 055 - sala 250 - Centro, Paracambi - RJ</p>
             </div>
-            <div class="map">
-                <div class="map-info">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58930.60721592103!2d-43.75852841792771!3d-22.610389392694024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x994de0906daee5%3A0x635ed114ffd1ee93!2sParacambi%2C%20RJ%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1729215680294!5m2!1spt-BR!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="map-overlay">
-                    Av. Dr. Plínio Casado, 058 - s... 
-                    <a href="#">Ver mapa ampliado</a>
-                </div>
-            </div>
+           
         </div>
 
 </section>
@@ -252,8 +349,20 @@
         </div>
         
     </div>
-</footer>
 
+</footer>
+    <div class="logo-footer">
+        <h1>Clínica <span>Saúde</span></h1>
+        <p>Integrada</p>
+    </div>
+
+
+
+<script>
+    function toggleMobileMenu(){
+        document.getElementById("menu").classList.toggle("active");
+    }
+</script>
 </body>
 
 </html>
